@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Header from "../components/Header";
 import SurfingJourney from "../components/SurfingJourney";
 import SurfCampCard from "../components/SurfCard";
+import SurfCardWithSlider from "../components/SurfCardWithSlider";
 import ChooseSurfCamp from "../components/ChooseSurf";
 import ImageCard from "../components/ImageCard";
 import SurfurWay from "../components/SurfurWay";
@@ -22,7 +23,12 @@ import Navbar from "../components/Navbar";
 const Home = () => {
   const cards = {
     card1: {
-      pic: "beach.jpg",
+      images: [
+        "beach_camp/11.jpg",
+        "beach_camp/bathroom01.jpg", 
+        "beach_camp/bathroom02.jpg",
+        "beach_camp/BATHROOM.jpg"
+      ],
       topic: "The Surfer Beach Surf Camp",
       body1:
         "Join us at the ultimate destination for surf enthusiasts. Experience the thrill of riding the waves and enjoy the serene beauty of the ocean.",
@@ -30,7 +36,12 @@ const Home = () => {
     },
 
     card2: {
-      pic: "ts2.jpg",
+      images: [
+        "ts2_camp/surfdays_1.jpg",
+        "ts2_camp/surfdays_2.jpg",
+        "ts2_camp/surfdays_3.jpg",
+        "ts2_camp/surfdays_4.jpg"
+      ],
       topic: "TS2 Surf Camp",
       body1:
         "Feel the magic of surfing as the sun sets over the horizon. Our guided sunset sessions are a perfect way to end your beach day.",
@@ -75,7 +86,7 @@ const Home = () => {
         <div className="max-w-xl mx-auto mb-16">
           <div className="grid grid-cols-1 gap-8">
             <ImageCard
-              image="srilanka.jpg"
+              image="image.png"
               title="Sri Lanka"
               link="/srilanka"
               index={0}
@@ -91,8 +102,8 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <SurfCampCard
-              pic={cards.card1.pic}
+            <SurfCardWithSlider
+              images={cards.card1.images}
               topic={cards.card1.topic}
               body1={cards.card1.body1}
               body2={cards.card1.body2}
@@ -107,8 +118,8 @@ const Home = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <SurfCampCard
-              pic={cards.card2.pic}
+            <SurfCardWithSlider
+              images={cards.card2.images}
               topic={cards.card2.topic}
               body1={cards.card2.body1}
               body2={cards.card2.body2}
@@ -118,23 +129,9 @@ const Home = () => {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center mt-8">
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 lg:grid-cols-1 items-center mt-8">
+          <div className="lg:col-span-3">
             <Difference />
-          </div>
-          
-          <div className="flex justify-center lg:justify-end">
-            <motion.div
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:scale-105"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <span className="text-sm sm:text-base font-semibold">
-                Check Beach Camp Package & Rates
-              </span>
-            </motion.div>
           </div>
         </div>
       </div>
@@ -170,17 +167,21 @@ const Home = () => {
           </motion.div>
         </div>
 
-        <div className="flex justify-center mt-8 mb-6">
+      
+        <div className="flex justify-center w-full mt-4 sm:mt-6 mb-3 sm:mb-4">
           <motion.div
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:scale-105"
+            className="transform transition-transform duration-300 hover:scale-105"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.5 }}
           >
-            <span className="text-sm sm:text-base font-semibold">
-              Check Beach Camp Package & Rates
-            </span>
+            <a
+              className="px-3 sm:px-4 py-2 text-sm sm:text-base font-medium border border-black rounded-full text-black hover:bg-gray-100 hover:scale-105 transition-transform duration-300"
+              href="/style-camp"
+            >
+              Book Now
+            </a>
           </motion.div>
         </div>
       </div>
@@ -195,8 +196,6 @@ const Home = () => {
       </motion.div>
 
       {/* <SurfurWay /> */}
-
-      <SurfPackageCard />
 
       <Activities />
 

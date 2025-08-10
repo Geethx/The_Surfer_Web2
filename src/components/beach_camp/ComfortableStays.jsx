@@ -1,7 +1,34 @@
 import React from 'react'
 import { motion as Motion } from 'framer-motion'
+import RoomImageSlider from './RoomImageSlider'
 
 const ComfortableStays = () => {
+  const roomImages = {
+    dormitory: [
+      "/beach_camp/DORMROOM.jpg",
+      "/beach_camp/bathroom01.jpg", 
+      "/beach_camp/bathroom02.jpg",
+      "/beach_camp/BATHROOM.jpg"
+    ],
+    singleRoom: [
+      "/beach_camp/s5.jpg",
+      "/beach_camp/bathroom01.jpg", 
+      "/beach_camp/bathroom02.jpg",
+      "/beach_camp/BATHROOM.jpg"
+    ],
+    doubleRoom: [
+      "/beach_camp/DOUBLER.jpg",
+      "/beach_camp/bathroom01.jpg", 
+      "/beach_camp/bathroom02.jpg",
+      "/beach_camp/BATHROOM.jpg"
+    ],
+    tripleRoom: [
+      "/beach_camp/room_2.jpg",
+      "/beach_camp/bathroom01.jpg", 
+      "/beach_camp/bathroom02.jpg",
+      "/beach_camp/BATHROOM.jpg"
+    ]
+  };
 
   return (
     <Motion.div
@@ -53,9 +80,9 @@ const ComfortableStays = () => {
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
             >
-              <img
-                src="/beach_camp/room_1.jpg"
-                alt="Comfortable stay"
+              <RoomImageSlider
+                images={roomImages.dormitory}
+                altText="Mixed Dormitory"
                 className='w-full h-48 sm:h-52 lg:h-56 object-cover'
               />
             </Motion.div>
@@ -89,9 +116,9 @@ const ComfortableStays = () => {
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
             >
-              <img
-                src="/beach_camp/room_2.jpg"
-                alt="Comfortable stay"
+              <RoomImageSlider
+                images={roomImages.singleRoom}
+                altText="Private Single Room Ensuite"
                 className='w-full h-48 sm:h-52 lg:h-56 object-cover'
               />
             </Motion.div>
@@ -125,9 +152,9 @@ const ComfortableStays = () => {
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
             >
-              <img
-                src="/beach_camp/room_3.jpg"
-                alt="Comfortable stay"
+              <RoomImageSlider
+                images={roomImages.doubleRoom}
+                altText="Private Double/Twin Room Ensuite"
                 className='w-full h-48 sm:h-52 lg:h-56 object-cover'
               />
             </Motion.div>
@@ -161,9 +188,9 @@ const ComfortableStays = () => {
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
             >
-              <img
-                src="/beach_camp/room_4.jpg"
-                alt="Comfortable stay"
+              <RoomImageSlider
+                images={roomImages.tripleRoom}
+                altText="Private Triple Room Ensuite"
                 className='w-full h-48 sm:h-52 lg:h-56 object-cover'
               />
             </Motion.div>

@@ -39,11 +39,25 @@ const SurfingJourney = () => {
         <div className='flex justify-center w-full mt-4 sm:mt-6 mb-3 sm:mb-4'>
           <a
           className="px-3 sm:px-4 py-2 text-sm sm:text-base font-medium border border-black rounded-full text-black hover:bg-gray-100 hover:scale-105 transition-transform duration-300"
-          href="https://main.d7z80586kqd0r.amplifyapp.com/"
-          target="_blank"
+          href="/ts2-camp"
         >
           Book Now
         </a>
+        </div>
+
+        <div className='flex justify-center w-full mt-2 mb-4'>
+          <motion.div
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:scale-105"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true, amount: 0.3 }}
+            onClick={() => window.location.href = '/beach-camp'}
+          >
+            <span className="text-sm sm:text-base font-semibold">
+              Check Beach Camp Package & Rates
+            </span>
+          </motion.div>
         </div>
     </motion.div>
   )

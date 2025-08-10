@@ -12,7 +12,7 @@ const LifeAtSurfCamp = () => {
       viewport={{ once: true, amount: 0.3 }}
     >
       <Motion.h1
-        className='text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4 mb-2 font-bold text-center text-neutral-400'
+        className='text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4 mb-6 font-bold text-center text-neutral-400'
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}

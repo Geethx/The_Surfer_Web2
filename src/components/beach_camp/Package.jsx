@@ -37,6 +37,30 @@ const Package = () => {
               </tr>
             </thead>
             <tbody>
+               <tr className="border-b border-gray-300">
+                <td className="px-6 py-4 text-sm text-gray-900 font-medium">Surf Lessons</td>
+                <td className="px-6 py-4 text-center text-sm text-gray-900">
+                  06 Surf Lessons or Guiding / Week
+                </td>
+                <td className="px-6 py-4 text-center text-sm text-gray-900">
+                  11 Surf Lessons
+                </td>
+                <td className="px-6 py-4 text-center text-sm text-gray-900">
+                  06 Surf Lessons or Guiding
+                </td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4 text-sm text-gray-900 font-medium">Yoga</td>
+                <td className="px-6 py-4 text-center text-sm text-gray-900">
+                  Sunrise or Sunset Everyday
+                </td>
+                <td className="px-6 py-4 text-center text-sm text-gray-900">
+                  02 Sessions / Week
+                </td>
+                <td className="px-6 py-4 text-center text-sm text-gray-900">
+                  02 Sessions / Week
+                </td>
+              </tr>
               <tr className="border-b border-gray-300">
                 <td className="px-6 py-4 text-sm text-gray-900 font-medium">07 nights accommodation</td>
                 <td className="px-6 py-4 text-center">
@@ -109,30 +133,7 @@ const Package = () => {
                   <span className="text-green-600 text-xl">✓</span>
                 </td>
               </tr>
-              <tr className="border-b border-gray-300">
-                <td className="px-6 py-4 text-sm text-gray-900 font-medium">Surf Lessons</td>
-                <td className="px-6 py-4 text-center text-sm text-gray-900">
-                  06 Surf Lessons or Guiding / Week
-                </td>
-                <td className="px-6 py-4 text-center text-sm text-gray-900">
-                  11 Surf Lessons
-                </td>
-                <td className="px-6 py-4 text-center text-sm text-gray-900">
-                  06 Surf Lessons or Guiding
-                </td>
-              </tr>
-              <tr>
-                <td className="px-6 py-4 text-sm text-gray-900 font-medium">Yoga</td>
-                <td className="px-6 py-4 text-center text-sm text-gray-900">
-                  Sunrise or Sunset Everyday
-                </td>
-                <td className="px-6 py-4 text-center text-sm text-gray-900">
-                  02 Sessions / Week
-                </td>
-                <td className="px-6 py-4 text-center text-sm text-gray-900">
-                  02 Sessions / Week
-                </td>
-              </tr>
+             
             </tbody>
           </table>
         </div>

@@ -19,6 +19,48 @@ const Activities = () => {
                     </h2>
                 </div>
             </div>
+
+             <div className="max-w-7xl mx-auto px-4 py-15 text-center mb-10">
+                <h2 className="text-xl md:text-2xl font-bold text-neutral-600 mb-4">
+                    BOAT PARTY
+                </h2>
+                <p className="text-gray-600 text-sm md:text-base mb-15 max-w-3xl mx-auto">
+                    #BOATPARTY! If you’ve ever attended our legendary boat party, you’ll never forget it!
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <img src="/activities/300.JPG" alt="" className="w-full h-80 object-cover shadow-md" />
+                    <img src="/activities/301.JPG" alt="" className="w-full h-80 object-cover shadow-md" />
+                    <img src="/activities/302.JPG" alt="" className="w-full h-80 object-cover shadow-md" />
+                </div>
+            </div>
+
+            {/* Second Video */}
+            <div className="max-w-7xl mx-auto px-4 pb-10">
+                <div className="w-full h-72 md:h-96 overflow-hidden shadow-md">
+                    <img
+                        src="/activities/305.jpg"
+                        alt=""
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+            </div>
+
+            {/* Booking CTA */}
+            <div className="max-w-7xl mx-auto px-4 py-16 text-center">
+                <h2 className="text-2xl md:text-3xl font-bold text-neutral-600 mb-6">
+                    Book your spot now
+                </h2>
+                <button
+                    onClick={() =>
+                        window.location.replace(
+                            "https://main.d7z80586kqd0r.amplifyapp.com/"
+                        )
+                    }
+                    className="bg-[#0a67b3] hover:bg-[#095a99] text-white font-semibold px-6 py-3 rounded-full shadow-md transition duration-300"
+                >
+                    Booking
+                </button>
+            </div>
             
             <div className="max-w-7xl mx-auto px-4 py-15 text-center">
                 <h2 className="text-xl md:text-2xl font-bold text-neutral-600 mb-4">
@@ -28,9 +70,9 @@ const Activities = () => {
                     We have plenty of activities for you and we have group events for you every day. No matter if you're with friends or traveling solo, you are never alone at The Surfer.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <img src="/activities/info_1.jpg" alt="" className="w-full h-80 object-cover shadow-md" />
-                    <img src="/activities/info_2.jpg" alt="" className="w-full h-80 object-cover shadow-md" />
-                    <img src="/activities/info_3.jpg" alt="" className="w-full h-80 object-cover shadow-md" />
+                    <img src="/activities/friends1.jpg" alt="" className="w-full h-80 object-cover shadow-md" />
+                    <img src="/activities/101.JPG" alt="" className="w-full h-80 object-cover shadow-md" />
+                    <img src="/activities/people2.jpg" alt="" className="w-full h-80 object-cover shadow-md" />
                 </div>
             </div>
 
@@ -66,7 +108,7 @@ const Activities = () => {
             <div className="max-w-7xl mx-auto px-4 pb-10">
                 <div className="w-full h-72 md:h-96 overflow-hidden shadow-md">
                     <img
-                        src="/activities/people1.jpg"
+                        src="/activities/main2.jpg"
                         alt=""
                         className="w-full h-full object-cover"
                     />
@@ -89,50 +131,7 @@ const Activities = () => {
                     <img src="/activities/info_5.jpg" alt="" className="w-full h-80 object-cover shadow-md" />
                     <img src="/activities/info_6.jpg" alt="" className="w-full h-80 object-cover shadow-md" />
                 </div>
-            </div>
-
-            {/* Info Section 3 */}
-            <div className="max-w-7xl mx-auto px-4 py-15 text-center mb-10">
-                <h2 className="text-xl md:text-2xl font-bold text-neutral-600 mb-4">
-                    BOAT PARTY
-                </h2>
-                <p className="text-gray-600 text-sm md:text-base mb-15 max-w-3xl mx-auto">
-                    #BOATPARTY! If you’ve ever attended our legendary boat party, you’ll never forget it!
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <img src="/activities/info_7.jpg" alt="" className="w-full h-80 object-cover shadow-md" />
-                    <img src="/activities/info_8.jpg" alt="" className="w-full h-80 object-cover shadow-md" />
-                    <img src="/activities/info_9.jpg" alt="" className="w-full h-80 object-cover shadow-md" />
-                </div>
-            </div>
-
-            {/* Second Video */}
-            <div className="max-w-7xl mx-auto px-4 pb-10">
-                <div className="w-full h-72 md:h-96 overflow-hidden shadow-md">
-                    <img
-                        src="/activities/people3.jpg"
-                        alt=""
-                        className="w-full h-full object-cover"
-                    />
-                </div>
-            </div>
-
-            {/* Booking CTA */}
-            <div className="max-w-7xl mx-auto px-4 py-16 text-center">
-                <h2 className="text-2xl md:text-3xl font-bold text-neutral-600 mb-6">
-                    Book your spot now
-                </h2>
-                <button
-                    onClick={() =>
-                        window.location.replace(
-                            "https://main.d7z80586kqd0r.amplifyapp.com/"
-                        )
-                    }
-                    className="bg-[#0a67b3] hover:bg-[#095a99] text-white font-semibold px-6 py-3 rounded-full shadow-md transition duration-300"
-                >
-                    Booking
-                </button>
-            </div>
+            </div>           
 
             <Footer />
         </div>

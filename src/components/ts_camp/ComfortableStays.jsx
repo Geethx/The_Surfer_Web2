@@ -1,7 +1,35 @@
 import React from 'react'
 import { motion as Motion } from 'framer-motion'
+import RoomImageSlider from './RoomImageSlider'
 
 const ComfortableStays = () => {
+  // Define image arrays for each room type
+  const roomImages = {
+    dormitory: [
+      "/ts2_camp/dorm.jpg",
+      "/ts2_camp/bathroom.jpg",
+      "/ts2_camp/bathroom2.jpg",
+      "/ts2_camp/livingroom.jpg"
+    ],
+    singleRoom: [
+      "/ts2_camp/room_3.jpg",
+      "/ts2_camp/bathroom.jpg",
+      "/ts2_camp/bathroom2.jpg",
+      "/ts2_camp/livingroom.jpg"
+    ],
+    doubleRoom: [
+      "/ts2_camp/doubleroom.jpg",
+      "/ts2_camp/bathroom.jpg",
+      "/ts2_camp/bathroom2.jpg",
+      "/ts2_camp/livingroom.jpg"
+    ],
+    tripleRoom: [
+      "/ts2_camp/tripleroom.jpg",
+      "/ts2_camp/bathroom.jpg",
+      "/ts2_camp/bathroom2.jpg",
+      "/ts2_camp/livingroom.jpg"
+    ]
+  };
 
   return (
     <Motion.div
@@ -52,9 +80,9 @@ const ComfortableStays = () => {
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
             >
-              <img
-                src="/ts2_camp/room_1.jpg"
-                alt="Comfortable stay"
+              <RoomImageSlider
+                images={roomImages.dormitory}
+                altText="Mixed Dorm Room"
                 className='w-full h-48 sm:h-52 lg:h-56 object-cover'
               />
             </Motion.div>
@@ -66,8 +94,8 @@ const ComfortableStays = () => {
               transition={{ duration: 0.25, delay: 0.04 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <p className='text-xs sm:text-sm text-neutral-600 leading-relaxed text-center'>
-                <strong>Mixed Dorm Room</strong> – Budget-friendly and social.
+             <p className='text-xs sm:text-sm text-neutral-600 leading-relaxed text-center'>
+                <strong>Mixed Dormitory</strong> – Great for solo travelers who love meeting people.
               </p>
             </Motion.div>
           </Motion.div>
@@ -88,9 +116,9 @@ const ComfortableStays = () => {
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
             >
-              <img
-                src="/ts2_camp/room_2.jpg"
-                alt="Comfortable stay"
+              <RoomImageSlider
+                images={roomImages.singleRoom}
+                altText="Private Single Room"
                 className='w-full h-48 sm:h-52 lg:h-56 object-cover'
               />
             </Motion.div>
@@ -102,8 +130,8 @@ const ComfortableStays = () => {
               transition={{ duration: 0.25, delay: 0.04 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <p className='text-xs sm:text-sm text-neutral-600 leading-relaxed text-center'>
-                <strong>Female Dorm Room</strong> – Quiet, clean, and ideal for solo female travelers.
+             <p className='text-xs sm:text-sm text-neutral-600 leading-relaxed text-center'>
+                <strong>Private Single Room Ensuite</strong> – Your Personal Surf Haven Perfect for solo travelers craving privacy and comfort, for a peaceful night’s rest after a day riding the waves and soaking up the sun.
               </p>
             </Motion.div>
           </Motion.div>
@@ -124,9 +152,9 @@ const ComfortableStays = () => {
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
             >
-              <img
-                src="/ts2_camp/room_3.jpg"
-                alt="Comfortable stay"
+              <RoomImageSlider
+                images={roomImages.doubleRoom}
+                altText="Private Double Room"
                 className='w-full h-48 sm:h-52 lg:h-56 object-cover'
               />
             </Motion.div>
@@ -138,8 +166,8 @@ const ComfortableStays = () => {
               transition={{ duration: 0.25, delay: 0.04 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <p className='text-xs sm:text-sm text-neutral-600 leading-relaxed text-center'>
-                <strong>Private Double Room</strong> – Perfect for couples or solo guests wanting privacy.
+               <p className='text-xs sm:text-sm text-neutral-600 leading-relaxed text-center'>
+                <strong>Private Double / Twin Room Ensuite</strong> – For Solo, Couple or Friends want privacy with style for a good night sleep.
               </p>
             </Motion.div>
           </Motion.div>
@@ -160,9 +188,9 @@ const ComfortableStays = () => {
               viewport={{ once: true, amount: 0.2 }}
               whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
             >
-              <img
-                src="/ts2_camp/room_4.jpg"
-                alt="Comfortable stay"
+              <RoomImageSlider
+                images={roomImages.tripleRoom}
+                altText="Private Twin Room"
                 className='w-full h-48 sm:h-52 lg:h-56 object-cover'
               />
             </Motion.div>
@@ -175,7 +203,7 @@ const ComfortableStays = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <p className='text-xs sm:text-sm text-neutral-600 leading-relaxed text-center'>
-                <strong>Private Twin Room</strong> – For friends or siblings sharing a trip.
+                <strong>Private Triple  Room Ensuite</strong> – for a group of friends or a small family, our triple rooms are all about shared moments and smooth comfort. With plenty of space.
               </p>
             </Motion.div>
           </Motion.div>

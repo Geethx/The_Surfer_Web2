@@ -26,7 +26,7 @@ const ImageCard = () => {
           whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
         >
           <img 
-            src="/beach_camp/image_1.jpg" 
+            src="/ts2_camp/restaurant.jpg" 
             alt="Beach Camp Rooftop"
             className='w-full h-48 md:h-60 object-cover'
           />
@@ -41,7 +41,7 @@ const ImageCard = () => {
           whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
         >
           <img 
-            src="/beach_camp/image_2.jpg" 
+            src="/ts2_camp/IMG_0593.JPG" 
             alt="Pool Area"
             className='w-full h-48 md:h-60 object-cover'
           />
@@ -59,7 +59,7 @@ const ImageCard = () => {
             whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
           >
             <img 
-              src="/beach_camp/image_3.jpg" 
+              src="/ts2_camp/building.jpg" 
               alt="Beach Camp Building"
               className='w-full h-48 md:h-60 object-cover'
             />

@@ -17,13 +17,15 @@ const SurfCampCard = ({ pic, topic, body1, body2, link, index }) => {
         <h1 className="text-2xl font-bold mb-2 leading-6">{topic}</h1>
         <p className="text-sm mb-2 leading-4">{body1}</p>
         <p className="text-sm mb-4">{body2}</p>
-        <a 
-          href={link} 
-          className="text-white border-2 border-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-black transition"
-          onClick={(e) => e.stopPropagation()} // Prevent double navigation
-        >
-          BOOK NOW
-        </a>
+        {index !== 3 && (
+          <a 
+            href={link} 
+            className="text-white border-2 border-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-black transition"
+            onClick={(e) => e.stopPropagation()}
+          >
+            BOOK NOW
+          </a>
+        )}
       </div>
     </div>
   );
